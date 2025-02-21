@@ -255,7 +255,7 @@ hr {
 	}
 	main {
 		padding: 3rem;
-		max-width: 50rem;
+		max-width: 48rem;
 		background-color: var(--white);
 		border-radius: 14px;
 	}
@@ -266,7 +266,7 @@ hr {
 	}
 
 	#main-description {
-		padding-right: 4rem;
+		/* padding-right: 4rem; */
 	}
 
 	img {
