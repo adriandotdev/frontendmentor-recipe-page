@@ -269,6 +269,9 @@ hr {
 		/* padding-right: 4rem; */
 	}
 
+	#main-preparation-time ul {
+		gap: 0.5rem;
+	}
 	img {
 		border-radius: 14px;
 	}
