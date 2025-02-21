@@ -1,0 +1,279 @@
+:root {
+	/* Neutral Colors */
+	--white: hsl(0, 0%, 100%);
+
+	--stone-100: hsl(30, 54%, 90%);
+	--stone-150: hsl(30, 18%, 87%);
+	--stone-600: hsl(30, 10%, 34%);
+	--stone-900: hsl(24, 5%, 18%);
+
+	/* Accent Colors */
+	--brown-800: hsl(14, 45%, 36%);
+
+	--rose-800: hsl(332, 51%, 32%);
+	--rose-50: hsl(330, 100%, 98%);
+
+	--font-serif: "Young Serif", serif; /* 400 */
+	--font-sans: "Outfit", sans-serif; /* 400, 600, 700 */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--font-sans);
+	font-size: 1rem;
+}
+
+img {
+	width: 100%;
+}
+
+#main-content {
+	padding: 2rem 2rem 2rem 2rem;
+}
+
+#main-title {
+	padding-bottom: 1rem;
+	font-family: var(--font-serif);
+	color: var(--stone-900);
+	font-weight: 400;
+	font-size: 2rem;
+}
+
+#main-description {
+	color: var(--stone-600);
+	line-height: 1.5;
+}
+
+/* Preparation Time */
+#main-preparation-time {
+	background-color: var(--rose-50);
+	padding-left: 1.8rem;
+	padding-right: 1.8rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1rem;
+	border-radius: 12px;
+	margin-top: 2rem;
+}
+
+#main-preparation-time h2 {
+	color: var(--rose-800);
+	font-size: 1.2rem;
+	font-family: var(--font-sans);
+	font-weight: 600;
+}
+
+#main-preparation-time ul {
+	list-style: none;
+	padding-top: 1.2rem;
+	padding-right: 3rem;
+	padding-left: 0.5rem;
+	padding-bottom: 0.5rem;
+	display: flex;
+	flex-direction: column;
+
+	gap: 1rem;
+}
+
+#main-preparation-time li {
+	display: flex;
+	align-items: center; /* Align bullet and text */
+	line-height: 1.5;
+}
+
+#main-preparation-time li .bullet {
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: var(--brown-800);
+	margin-right: 1.8rem;
+	flex-shrink: 0;
+}
+
+#main-preparation-time li .content {
+	font-weight: 500;
+	color: var(--stone-600);
+}
+
+#main-preparation-time li .content span {
+	font-weight: 600;
+	color: var(--stone-600);
+}
+
+/* Main Ingredients */
+
+#main-ingredients {
+	margin-top: 2rem;
+}
+
+#main-ingredients h2 {
+	font-family: var(--font-serif);
+	color: var(--brown-800);
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+#main-ingredients ul {
+	list-style: none;
+
+	padding-top: 1.2rem;
+	padding-right: 3rem;
+	padding-left: 0.5rem;
+	padding-bottom: 0.5rem;
+	display: flex;
+	flex-direction: column;
+
+	gap: 1rem;
+}
+
+#main-ingredients ul li {
+	display: flex;
+	align-items: center;
+	color: var(--stone-600);
+	line-height: 1.5;
+}
+
+#main-ingredients ul li .bullet {
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: var(--brown-800);
+	margin-right: 1.8rem;
+	flex-shrink: 0;
+	display: inline-block;
+}
+
+hr {
+	border: none; /* Remove default border */
+	height: 1px; /* Thickness of separator */
+	background-color: var(--stone-150); /* Separator color */
+	margin: 1.2rem 0; /* Space above and below */
+}
+
+/* Main Instructions */
+
+#main-instructions h2 {
+	font-family: var(--font-serif);
+	color: var(--brown-800);
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+#main-instructions ol {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1.5rem;
+}
+
+#main-instructions ol li p {
+	padding-left: 0.8rem;
+	color: var(--stone-600);
+	/* text-align: justify; */
+	line-height: 1.5;
+}
+
+#main-instructions ol li::marker {
+	color: var(--brown-800);
+}
+
+#main-instructions ol li p span {
+	color: var(--stone-600) !important;
+	font-weight: 600;
+}
+
+/* Nutrition */
+
+#main-nutrition h2 {
+	font-family: var(--font-serif);
+	color: var(--brown-800);
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+#main-nutrition p {
+	margin-top: 1rem;
+	color: var(--stone-600);
+	font-weight: 400;
+	line-height: 1.5;
+	word-spacing: 5px;
+	padding-right: 0rem;
+}
+
+.table {
+	display: table;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.row {
+	display: table-row; /* Makes it behave like a row */
+}
+
+.cell {
+	display: table-cell; /* Makes it behave like a cell */
+	border-bottom: 1px solid var(--stone-150);
+	padding: 1rem;
+	padding-left: 2rem;
+	text-align: left; /* Align content horizontally */
+	vertical-align: middle; /* Align content vertically */
+}
+
+.cell:first-child {
+	color: var(--stone-600);
+	font-weight: 500;
+}
+
+.cell:last-child {
+	color: var(--brown-800);
+	font-weight: 600;
+}
+
+.attribution {
+	margin-top: 2rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.attribution a {
+	font-style: var(--font-sans);
+	text-decoration: none;
+	color: var(--brown-800);
+}
+@media only screen and (min-width: 768px) {
+	body {
+		padding: 2rem 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: var(--stone-100);
+		align-items: center;
+	}
+	main {
+		padding: 3rem;
+		max-width: 50rem;
+		background-color: var(--white);
+		border-radius: 14px;
+	}
+
+	#main-content {
+		padding: 0;
+		padding: 2rem 0;
+	}
+
+	#main-description {
+		padding-right: 4rem;
+	}
+
+	img {
+		border-radius: 14px;
+	}
+
+	#main-instructions li {
+		padding-right: 2rem;
+	}
+}
